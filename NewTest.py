@@ -90,10 +90,10 @@ def science():
     button = customtkinter.CTkButton(app, text="Biology", command=on_click4)
     button.place(x=360, y=200)
 
-
-app = tk.Tk()
+# app = tk.Tk()
 app.title("Tkinter Button Example")
-app.geometry("1250x700")
+app.geometry("1000x700")
+app.configure(fg_color="CadetBlue1")
 button = customtkinter.CTkButton(app, text="Math", command=button_click)
 button.place(x = 510, y= 20)
 button = customtkinter.CTkButton(app, text="Science", command=science)
