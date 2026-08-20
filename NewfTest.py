@@ -1,5 +1,15 @@
 import tkinter as tk
 
+def idea():
+    idea_list = []
+    root = tk.Tk()
+    tk.Label(root, text="class").grid(row=0, column=0)
+    entry1 = tk.Entry(root)
+    entry1.grid(row=0, column=1)
+    idea_list.append(entry1)
+    exit = tk.Button(root, text="exit", command=root.destroy)
+    exit.grid(row=0, column=2)
+
 def on_click():
     import webbrowser
     webbrowser.open("https://www.youtube.com/watch?v=Aq5WXmQQooo")
@@ -47,6 +57,7 @@ def science():
     button.place(x=300, y=20)
 
 
+
 root = tk.Tk()
 root.title("Tkinter Button Example")
 root.geometry("800x500")
@@ -56,6 +67,8 @@ button = tk.Button(root, text="physics", command=button_click1)
 button.place(x = 300, y =20)
 button = tk.Button(root, text="science", command=science)
 button.place(x = 200, y =20)
+button_idea = tk.Button(root, text="session idea", command=idea)
+button_idea.place(x = 700, y = 20)
 
 
 root.mainloop()
