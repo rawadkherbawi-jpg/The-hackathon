@@ -5,7 +5,7 @@ Subjects = {
     "math": ["geometry_https://www.youtube.com/watch?v=Aq5WXmQQooo", "algebra_https://www.youtube.com/watch?v=z7rxl5KsPjs&list=RDz7rxl5KsPjs&start_radio=1&pp=oAcB"]
 }
 
-
+print("DOG")
 
 def on_click(LinkLesson):
     import webbrowser
